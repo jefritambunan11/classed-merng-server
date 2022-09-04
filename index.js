@@ -20,15 +20,16 @@ let server = new ApolloServer({
     context: ({req}) => ({ req, pubsub }),
 })
 
-mongoose.connect(process.env.MONGODB, {useNewUrlParser: true}).then(() => {
-    let _server_config_ = {port: process.env.PORT || 5000}
+let PORT = process.env.PORT || 5000
+
+mongoose.connect(process.env.MONGODB, {useNewUrlParser: true}).then(() => {    
     console.table({        
         "Message": "Connected to Atlas Cloud Shared Server",
         "ServerApp": "Apollo Server & GraphQL",
-        "ServerPort": _server_config_.port,
+        "ServerPort": PORT,
         "ProjectName": "Test MERNG Stack - Jefri Tambunan"
     })    
-    return server.listen(_server_config_.port)
+    return server.listen({port: PORT})
 
 }).catch(err => {
     console.log(
