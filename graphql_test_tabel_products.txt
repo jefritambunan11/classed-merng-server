@@ -1,0 +1,97 @@
+##########
+# getPosts
+##########
+{
+  getPosts {
+    id
+    body
+    createdAt
+  }
+}
+
+#######
+# Hasil
+#######
+
+{
+  "data": {
+    "getPosts": [
+      {
+        "id": "6311f9e20301cc3c0ba674aa",
+        "body": "This is a simple post",
+        "createdAt": "fefefeff"
+      }
+    ]
+  }
+}
+
+
+
+
+#########
+# getPost
+#########
+{
+  getPost(postID: "6311f9e20301cc3c0ba674aa") {
+    id
+    body
+    createdAt
+  }
+}
+
+#######
+# Hasil
+#######
+
+{
+  "data": {
+    "getPost": {
+      "id": "6311f9e20301cc3c0ba674aa",
+      "body": "This is a simple post",
+      "createdAt": "fefefeff"
+    }
+  }
+}
+
+
+
+# Create POST
+
+
+mutation {
+  createPost(body: "This is my second post") {
+    id
+    body
+    username
+    createdAt        
+  }
+}
+
+#######
+# Hasil
+#######
+
+{
+  "data": {
+    "createPost": {
+      "id": "63124e2bc45da25ab26ab6c9",
+      "body": "This is my second post",
+      "username": "jefritambunan111",
+      "createdAt": "2022-09-02T18:40:43.036Z"
+    }
+  }
+}
+
+
+
+
+# Delete POST
+
+
+mutation {
+  deletePost(postID: "6312583811b9a17e6587eebd") 
+}
+
+#######
+# Hasil
+#######

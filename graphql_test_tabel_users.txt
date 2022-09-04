@@ -1,0 +1,33 @@
+##########
+# REGISTER
+##########
+mutation {
+  register(registerInput: {
+    username: "tt",
+    password: "1",
+    confirmPassword: "2",
+    email: "user@gmail.com",
+
+  }) {
+    id
+    email
+    token
+    username
+    createdAt
+
+  }
+}
+
+
+#########
+#LOGIN
+#########
+mutation {
+  login(username: "jefritambunan111", password: "1" ) {
+    id
+    email
+    token
+    username
+    createdAt
+  }
+}

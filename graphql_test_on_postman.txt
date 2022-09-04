@@ -1,0 +1,22 @@
+
+# Testing Graphql di Postman
+
+{
+    "query": "mutation {login(username: \"jefritambunan111\", password: \"1\" ){id email token username createdAt}}"
+}
+
+
+
+# Hasil
+
+{
+    "data": {
+        "login": {
+            "id": "6312271de3465232001f10c3",
+            "email": "jefriaritambunan@gmail.com",
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMTIyNzFkZTM0NjUyMzIwMDFmMTBjMyIsImVtYWlsIjoiamVmcmlhcml0YW1idW5hbkBnbWFpbC5jb20iLCJ1c2VybmFtZSI6ImplZnJpdGFtYnVuYW4xMTEiLCJpYXQiOjE2NjIxMzk1NjAsImV4cCI6MTY2MjE0MzE2MH0.KJARXyGG6WeONzcVEkTnrlFHhh4QTAmtPFW21h8Hl38",
+            "username": "jefritambunan111",
+            "createdAt": "2022-09-02T15:54:05.082Z"
+        }
+    }
+}

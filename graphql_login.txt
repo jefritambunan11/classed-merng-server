@@ -1,0 +1,9 @@
+mutation {
+  login(username: "jefritambunan111", password: "1" ) {
+    id
+    email
+    token
+    username
+    createdAt
+  }
+}

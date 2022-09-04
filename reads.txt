@@ -1,0 +1,15 @@
+# install apollo server
+yarn add apollo-server
+
+
+# install graphql
+yarn add graphql
+
+# install mongoose
+yarn add mongoose
+
+# install nodemon
+npm install nodemon --save-dev
+
+
+u
