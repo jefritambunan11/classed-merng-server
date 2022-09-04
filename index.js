@@ -20,7 +20,7 @@ let server = new ApolloServer({
     context: ({req}) => ({ req, pubsub }),
 })
 
-let PORT = process.env.PORT || 5000
+let PORT = 5000
 
 mongoose.connect(process.env.MONGODB, {useNewUrlParser: true}).then(() => {    
     console.table({        
