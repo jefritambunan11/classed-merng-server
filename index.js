@@ -20,7 +20,7 @@ let server = new ApolloServer({
     context: ({req}) => ({ req, pubsub }),
 })
 
-let PORT = 5000
+// let PORT=5000
 
 mongoose.connect(process.env.MONGODB, {useNewUrlParser: true}).then(() => {    
     console.table({        
@@ -29,7 +29,7 @@ mongoose.connect(process.env.MONGODB, {useNewUrlParser: true}).then(() => {
         "ServerPort": PORT,
         "ProjectName": "Test MERNG Stack - Jefri Tambunan"
     })    
-    return server.listen({port: PORT})
+    return server.listen({port: 5000})
 
 }).catch(err => {
     console.log(
