@@ -1,6 +1,0 @@
-####################################
-# Atlas MongoDB Shared Cloud DB Info
-####################################
-
-username: classed
-pass: w8MGz62evsHWQYep
